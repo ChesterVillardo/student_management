@@ -1,6 +1,7 @@
 # 🎓 Student Management System
 
-A simple web-based Student Management System built with **CodeIgniter 4**. This project allows users to manage student records with Create, Read, Update, and Delete (CRUD) functionalities, secure login, role-based access, and basic search.
+A simple web-based Student Management System built with **CodeIgniter 4**.
+This project allows users to manage student records with Create, Read, Update, and Delete (CRUD) functionalities, secure login, role-based access, and basic search.
 
 ## 📌 Features
 
@@ -15,8 +16,8 @@ A simple web-based Student Management System built with **CodeIgniter 4**. This 
 
 ## 🚀 Live Demo
 
-🔗 [Live Link](https://yourdomain.com)  
-📦 [GitHub Repository](https://github.com/YourUsername/student-management)
+🔗 [Live Link]([https:/](http://localhost/student-management/public/))  
+📦 [GitHub Repository](https://github.com/ChesterVillardo/student-management)
 
 ## 🛠️ Built With
 
@@ -46,7 +47,7 @@ Edit
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/YourUsername/student-management.git
+   git clone https://github.com/ChesterVillardo/student-management.git
 Set up the environment
 
 Copy .env.example to .env
@@ -59,7 +60,7 @@ pgsql
 Copy
 Edit
 database.default.hostname = localhost
-database.default.database = student_management
+database.default.database = student_management.db
 database.default.username = root
 database.default.password = 
 Run migrations (optional)
@@ -97,10 +98,12 @@ Sanitized form inputs
 
 Session-based access control
 
+
 🙋‍♂️ Author
 Chester B. Villardo
 Bachelor of Science in Information Technology
 National Teachers Colleges
+
 
 📃 License
 This project is licensed under the MIT License.
