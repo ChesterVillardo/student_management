@@ -1,60 +1,106 @@
-# CodeIgniter 4 Framework
+# 🎓 Student Management System
 
-## What is CodeIgniter?
+A simple web-based Student Management System built with **CodeIgniter 4**. This project allows users to manage student records with Create, Read, Update, and Delete (CRUD) functionalities, secure login, role-based access, and basic search.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## 📌 Features
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- ✅ User Registration & Login
+- ✅ Role-based Access (Admin/User)
+- ✅ CRUD for Student Records
+- ✅ Search and Filter Students
+- ✅ Secure Session Management
+- ✅ CSRF Protection
+- ✅ Input Validation & Error Handling
+- ✅ Styled UI with Basic CSS or Bootstrap
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## 🚀 Live Demo
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+🔗 [Live Link](https://yourdomain.com)  
+📦 [GitHub Repository](https://github.com/YourUsername/student-management)
 
-## Important Change with index.php
+## 🛠️ Built With
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+- [CodeIgniter 4](https://codeigniter.com/)
+- PHP 8.x
+- MySQL
+- HTML & CSS (or Bootstrap)
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## 📂 Folder Structure
 
-**Please** read the user guide for a better explanation of how CI4 works!
+student-management/
+├── app/
+│ ├── Controllers/
+│ ├── Models/
+│ └── Views/
+├── public/
+├── writable/
+├── .env
+├── composer.json
+└── README.md
 
-## Repository Management
+bash
+Copy
+Edit
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## ⚙️ Installation & Setup
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/YourUsername/student-management.git
+Set up the environment
 
-## Contributing
+Copy .env.example to .env
 
-We welcome contributions from the community.
+Set CI_ENVIRONMENT = development
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+Update database credentials:
 
-## Server Requirements
+pgsql
+Copy
+Edit
+database.default.hostname = localhost
+database.default.database = student_management
+database.default.username = root
+database.default.password = 
+Run migrations (optional)
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+bash
+Copy
+Edit
+php spark migrate
+Start the server
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+bash
+Copy
+Edit
+php spark serve
+Access it at http://localhost:8080
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+📸 Screenshots
+Login Page	Dashboard	Student List
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+📑 Deployment Notes
+Uploaded files to live server using FTP or cPanel.
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Updated app.baseURL in Config\App.php.
+
+Imported database on hosting control panel.
+
+Connected custom domain and enabled HTTPS.
+
+🔐 Security Features
+CSRF tokens enabled
+
+Server-side input validation
+
+Sanitized form inputs
+
+Session-based access control
+
+🙋‍♂️ Author
+Chester B. Villardo
+Bachelor of Science in Information Technology
+National Teachers Colleges
+
+📃 License
+This project is licensed under the MIT License.
