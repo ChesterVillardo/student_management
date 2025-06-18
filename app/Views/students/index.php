@@ -100,7 +100,7 @@
         <form method="get" action="<?= site_url('students') ?>">
             <input type="text" name="search" placeholder="Search..." value="<?= esc($search ?? '') ?>" />
             <button type="submit">🔍 Search</button>
-            <a class="btn" href="<?= site_url('students') ?>">⟳ Reset</a>
+            <a class="btn" href="<?= site_url('students') ?>">⟳ Refresh</a>
         </form>
     </div>
 
